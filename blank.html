@@ -1,0 +1,206 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://use.typekit.net/lgy1nxo.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/app.css">
+    <!-- Cart stylesheet (compile scss/_cart.scss to css/cart.css and include here) -->
+    <link rel="stylesheet" href="css/cart.css">
+  </head>
+  <body class="page">
+    <div id="loader"></div>
+      <header class="site-header header wow fadeInDown" data-wow-delay="1s">
+        <div class="header-inner">
+          <div class="grid-container full">
+            <div class="grid-x grid-margin-x grid-margin-y align-middle align-justify">
+                <div class="cell small-3">
+                  <button class="hamburger hamburger--collapse" type="button" data-toggle="offCanvas" aria-label="Toggle menu" aria-expanded="false" aria-controls="offCanvas">
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                    </span>
+                  </button>
+                </div>
+                <div class="cell small-3 medium-6 large-4 text-center">
+                  <a href="/" class="custom-logo-link">
+                    <img class="custom-logo title-logo" src="img/logo-plain.svg" alt="NUA Colour logo"/>
+                  </a>
+                </div>
+                <div class="cell small-3 text-right">
+                  <span class="header-buttons">
+                    <button class="header-button account-login" aria-label="Open account login">
+                        <img src="img/login-white.svg" alt="Login icon"/>
+                    </button>
+                     <button id="cartButton" class="header-button cart" aria-controls="cartPanel" aria-expanded="false" aria-label="Open shopping cart">
+                         <img src="img/cart-white.svg" alt="Cart icon"/>
+                         <span id="cartCount" class="cart-badge" aria-hidden="true">2</span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+          </div>
+        </div>
+      </header>
+  <div class="off-canvas-wrapper">
+  <div class="off-canvas position-left x-large-padding-top" id="offCanvas" data-off-canvas>
+    <!-- Your menu or Off-canvas content goes here -->
+    <nav class="offcanvas-menu white-text x-large-margin-top">
+      <ul>
+        <li><a href="#" aria-label="Home">Home</a></li>
+        <li><a href="#" aria-label="About Us">About Us</a></li>
+        <li><a href="#" aria-label="Products">Products</a></li>
+        <li><a href="#" aria-label="Contact Us">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="off-canvas-content" data-off-canvas-content>
+
+<section class="content-section white-background bg-element" id="main-content">
+  <div class="grid-container medium-padding-top medium-padding-bottom full">
+    <div class="grid-x align-center">
+      <div class="cell medium-6 image-side wow fadeInLeft" data-wow-offset="250">
+        <!-- images can go here -->
+      </div>
+      <div class="cell medium-5 small-11 wow fadeInRight text-side" data-wow-offset="250">
+       
+       <!-- text can go here -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section class="content-section" data-parallax="sroll" data-src="img/section-bg-100.jpg">
+  <div class="grid-container x-large-padding-top x-large-padding-bottom">
+    <div class="grid-x grid-margin-x align-middle">
+      <div class="cell medium-6 small-8 wow fadeInRight" data-wow-offset="250">
+        <h2 class="white-text">
+         Proudly vegan and ethically produced</h2>
+        <img class="ethic-logo" width="200" src="img/certified-organic.svg" alt="Certified Organic logo"/>
+        <img class="ethic-logo" width="200" src="img/made-in-ireland.svg" alt="Made in Ireland logo"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="dark-green-background bg-element">
+  <div class="grid-container large-padding-top large-padding-bottom">
+    <div class="grid-x grid-margin-y grid-padding-y grid-padding-x grid-margin-x align-justify">
+      <div class="cell medium-3 large-2 small-4">
+         <img src="img/white-logo.svg" class="title-logo" alt="NUA white logo"/>
+      </div>
+      <div class="cell medium-4 medium-text-center">
+        <div class="socials white-text">
+          <a href="#" aria-label="TikTok">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#" aria-label="YouTube">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" aria-label="X">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+
+        </div>
+      </div>
+      <div class="cell medium-shrink white-text">
+        <h4>Policies</h4>
+        <nav class="footer-nav">
+          <ul>
+            <li>Cancellation Policy</li>
+            <li>Shipping Policy</li>
+            <li>Returns Policy</li>
+            <li>Privacy Policy</li>
+            <li>Terms of Service</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="small-12 medium-12 large-12 cell light-grey-underline">
+      </div>
+      <div class="small-12 medium-12 large-12 cell white-text">
+        <p class="source-org copyright">&copy; 2025 NUA. <a href="https://alleykatdesign.com" target="_blank" rel="noopener">Website Design</a> by Alley Kat Design</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</div>
+</div>
+
+<!-- Cart backdrop + panel (static demo snippet) -->
+<div id="cartBackdrop" class="cart-backdrop" tabindex="-1" data-cart-backdrop></div>
+
+<aside id="cartPanel" class="cart-panel" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="cartPanelTitle">
+  <div class="panel-header">
+    <div class="panel-title" id="cartPanelTitle">Your Basket</div>
+    <div>
+      <button id="cartCloseBtn" class="btn-small dark-green-text" aria-label="Close cart"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+  </div>
+
+  <div class="panel-body" id="cartItems">
+    <!-- Example static items for demo -->
+    <div class="cart-item" data-item-id="sku-001" data-price="12.00">
+      <img src="img/product-thumb-1-8.png" alt="Nua Colour Tube - Soft Brown"/>
+      <div class="item-info">
+        <div class="item-title">Professional Permanent Hair Cream</div>
+        <div class="item-meta">100ml</div>
+        <div class="item-actions">
+          <input class="qty-input" type="number" min="1" value="1" aria-label="Quantity for Nua Colour Tube - Soft Brown" />
+          <button class="btn-small remove-item" aria-label="Remove Nua Colour Tube - Soft Brown">Remove</button>
+          <div class="item-price" aria-hidden="true" style="margin-left:auto;">€12.00</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cart-item" data-item-id="sku-002" data-price="8.50">
+      <img src="img/product-thumb-2-8.png" alt="Nua Conditioner - Restore"/>
+      <div class="item-info">
+        <div class="item-title">Hair Lightener Salon Professional</div>
+        <div class="item-meta">500g</div>
+        <div class="item-actions">
+          <input class="qty-input" type="number" min="1" value="1" aria-label="Quantity for Nua Conditioner - Restore" />
+          <button class="btn-small remove-item" aria-label="Remove Nua Conditioner - Restore">Remove</button>
+          <div class="item-price" aria-hidden="true" style="margin-left:auto;">€8.50</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="cartEmpty" class="cart-empty" style="display:none;">
+      Your basket is empty.
+    </div>
+  </div>
+
+  <div class="panel-footer">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:.5rem;">
+      <div style="font-weight:600;">Subtotal</div>
+      <div id="cartSubtotal" style="font-weight:600;">€20.50</div>
+    </div>
+    <div style="font-size:.9rem; color:#666; margin-bottom:.75rem;">Shipping calculated at checkout</div>
+    <div style="display:flex; gap:.5rem;">
+      <button id="checkoutBtn" class="button primary-button" style="flex:1;">Checkout</button>
+      <button id="viewCartBtn" class="button secondary-button" style="flex:1;">View Cart</button>
+    </div>
+  </div>
+</aside>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/what-input/dist/what-input.js"></script>
+    <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
+    <script src="js/jquery.parallax.min.js"></script>
+     <script src="../node_modules/slick-carousel/slick/slick.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/app.js"></script>
+
+    <!-- Cart behavior (static demo). Include js/cart.js (deferred) -->
+    <script src="js/cart.js" defer></script>
+  </body>
+</html>

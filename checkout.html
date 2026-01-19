@@ -1,0 +1,255 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout — NUA</title>
+    <link rel="icon" href="img/favicon-8.png">
+    <link rel="stylesheet" href="https://use.typekit.net/lgy1nxo.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/cart.css">
+  </head>
+  <body class="page">
+    <div id="loader"></div>
+
+    <header class="site-header header wow fadeInDown" data-wow-delay="1s">
+      <div class="header-inner">
+        <div class="grid-container full">
+          <div class="grid-x grid-margin-x grid-margin-y align-middle align-justify">
+              <div class="cell small-3">
+                <button class="hamburger hamburger--collapse" type="button" data-toggle="offCanvas" aria-label="Toggle menu" aria-expanded="false" aria-controls="offCanvas">
+                  <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+                </button>
+              </div>
+              <div class="cell small-3 medium-6 large-4 text-center">
+                <a href="index.html" class="custom-logo-link"><img class="custom-logo title-logo" src="img/logo-plain.svg" alt="NUA Colour logo"/></a>
+              </div>
+              <div class="cell small-3 text-right">
+                <span class="header-buttons">
+                  <button class="header-button account-login" aria-label="Open account login"><img src="img/login-white.svg" alt="Login icon"/></button>
+                   <button id="cartButton" class="header-button cart" aria-controls="cartPanel" aria-expanded="false" aria-label="Open shopping cart"><img src="img/cart-white.svg" alt="Cart icon"/><span id="cartCount" class="cart-badge" aria-hidden="true">0</span></button>
+                </span>
+              </div>
+            </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas position-left x-large-padding-top" id="offCanvas" data-off-canvas>
+        <nav class="offcanvas-menu white-text x-large-margin-top">
+          <ul>
+            <li><a href="index.html" aria-label="Home">Home</a></li>
+            <li><a href="about.html" aria-label="About Us">About Us</a></li>
+            <li><a href="shop.html" aria-label="Products">Products</a></li>
+            <li><a href="contact.html" aria-label="Contact Us">Contact Us</a></li>
+            <li><a href="policies.html" aria-label="Policies">Policies</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="off-canvas-content" data-off-canvas-content>
+        <section class="content-section white-background" id="main-content">
+          <div class="grid-container medium-padding-top medium-padding-bottom">
+            <div class="grid-x grid-margin-x">
+              <div class="cell small-12">
+                <h1 class="page-heading">Checkout</h1>
+                <p class="leading-text">Complete your order below. This is a static demo checkout — integrate with your payment gateway in the next step.</p>
+              </div>
+            </div>
+
+            <div class="grid-x grid-margin-x medium-margin-top">
+              <div class="cell small-12 medium-7">
+                <h2>Billing & Shipping</h2>
+                <form id="checkoutForm" method="post" action="#" novalidate>
+                  <div class="grid-x grid-margin-x">
+                    <div class="cell small-12 medium-6">
+                      <label for="billing-first">First name</label>
+                      <input id="billing-first" name="billing_first" type="text" required>
+                    </div>
+                    <div class="cell small-12 medium-6">
+                      <label for="billing-last">Last name</label>
+                      <input id="billing-last" name="billing_last" type="text" required>
+                    </div>
+                    <div class="cell small-12">
+                      <label for="billing-company">Company (optional)</label>
+                      <input id="billing-company" name="billing_company" type="text">
+                    </div>
+                    <div class="cell small-12">
+                      <label for="billing-address">Address</label>
+                      <input id="billing-address" name="billing_address" type="text" required>
+                    </div>
+                    <div class="cell small-12 medium-6">
+                      <label for="billing-city">City</label>
+                      <input id="billing-city" name="billing_city" type="text" required>
+                    </div>
+                    <div class="cell small-12 medium-6">
+                      <label for="billing-postcode">Postcode</label>
+                      <input id="billing-postcode" name="billing_postcode" type="text" required>
+                    </div>
+                    <div class="cell small-12 medium-6">
+                      <label for="billing-country">Country</label>
+                      <input id="billing-country" name="billing_country" type="text" required>
+                    </div>
+                    <div class="cell small-12 medium-6">
+                      <label for="billing-email">Email</label>
+                      <input id="billing-email" name="billing_email" type="email" required>
+                    </div>
+                  </div>
+
+                  <h2 style="margin-top:1.25rem;">Payment</h2>
+                  <p style="margin-bottom:.5rem;">This is a demo form. Replace with your payment gateway integration (Stripe, Shopify Payments, etc.).</p>
+
+                  <div class="grid-x grid-margin-x">
+                    <div class="cell small-12">
+                      <label for="card-name">Name on card</label>
+                      <input id="card-name" name="card_name" type="text" required>
+                    </div>
+                    <div class="cell small-12">
+                      <label for="card-number">Card number</label>
+                      <input id="card-number" name="card_number" type="text" placeholder="•••• •••• •••• ••••" required>
+                    </div>
+                    <div class="cell small-6 medium-4">
+                      <label for="card-exp">Expiry</label>
+                      <input id="card-exp" name="card_exp" type="text" placeholder="MM/YY" required>
+                    </div>
+                    <div class="cell small-6 medium-4">
+                      <label for="card-cvc">CVC</label>
+                      <input id="card-cvc" name="card_cvc" type="text" placeholder="CVC" required>
+                    </div>
+                  </div>
+
+                  <div style="margin-top:1rem; display:flex; gap:.5rem;">
+                    <button type="submit" class="button primary-button">Place order</button>
+                    <a href="shop.html" class="button tertiary-button">Continue shopping</a>
+                  </div>
+                </form>
+              </div>
+
+              <div class="cell small-12 medium-5">
+                <h2>Order summary</h2>
+                <div class="order-summary" style="background:#fff; padding:1rem; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.04);">
+                  <div class="order-item" style="display:flex; gap:.75rem; align-items:center; margin-bottom:.75rem;">
+                    <img src="img/product-thumb-1-8.png" alt="Professional Permanent Hair Cream" style="width:64px; height:64px; object-fit:cover;">
+                    <div>
+                      <div style="font-weight:600;">Professional Permanent Hair Cream</div>
+                      <div style="color:#666; font-size:.95rem;">Soft Brown — 1 × €12.00</div>
+                    </div>
+                  </div>
+
+                  <div class="order-item" style="display:flex; gap:.75rem; align-items:center; margin-bottom:.75rem;">
+                    <img src="img/product-thumb-2-8.png" alt="Hair Lightener" style="width:64px; height:64px; object-fit:cover;">
+                    <div>
+                      <div style="font-weight:600;">Hair Lightener — Salon Professional</div>
+                      <div style="color:#666; font-size:.95rem;">500g — 1 × €18.00</div>
+                    </div>
+                  </div>
+
+                  <div style="display:flex; justify-content:space-between; margin-top:1rem; font-weight:600;">
+                    <div>Subtotal</div>
+                    <div>€30.00</div>
+                  </div>
+                  <div style="display:flex; justify-content:space-between; margin-top:.5rem;">
+                    <div>Shipping</div>
+                    <div>Calculated at checkout</div>
+                  </div>
+                  <div style="display:flex; justify-content:space-between; margin-top:.75rem; font-weight:700;">
+                    <div>Total</div>
+                    <div>€30.00</div>
+                  </div>
+
+                  <p style="margin-top:0.75rem; color:#666; font-size:.95rem;">By placing the order you agree to our <a href="policies.html#terms">Terms of Service</a> and <a href="policies.html#privacy">Privacy Policy</a>.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <footer class="dark-green-background bg-element">
+          <div class="grid-container large-padding-top large-padding-bottom">
+            <div class="grid-x grid-margin-y grid-padding-y grid-padding-x grid-margin-x align-justify">
+              <div class="cell medium-3 large-2 small-4">
+                 <img src="img/white-logo.svg" class="title-logo" alt="NUA white logo"/>
+              </div>
+              <div class="cell medium-4 medium-text-center">
+                <div class="socials white-text">
+                  <a href="https://www.tiktok.com/" aria-label="TikTok" target="_blank" rel="noopener"><i class="fa-brands fa-tiktok"></i></a>
+                  <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+              </div>
+              <div class="cell medium-shrink white-text">
+                <h4>Policies</h4>
+                <nav class="footer-nav">
+                  <ul>
+                    <li><a href="policies.html#cancellation">Cancellation Policy</a></li>
+                    <li><a href="policies.html#shipping">Shipping Policy</a></li>
+                    <li><a href="policies.html#returns">Returns Policy</a></li>
+                    <li><a href="policies.html#privacy">Privacy Policy</a></li>
+                    <li><a href="policies.html#terms">Terms of Service</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+      </div>
+    </div>
+
+    <div id="cartBackdrop" class="cart-backdrop" tabindex="-1" data-cart-backdrop></div>
+    <aside id="cartPanel" class="cart-panel" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="cartPanelTitle">
+      <div class="panel-header">
+        <div class="panel-title" id="cartPanelTitle">Your Basket</div>
+        <div><button id="cartCloseBtn" class="btn-small" aria-label="Close cart">&times;</button></div>
+      </div>
+      <div class="panel-body" id="cartItems"><div id="cartEmpty" class="cart-empty">Your basket is empty.</div></div>
+      <div class="panel-footer">
+        <div style="display:flex; justify-content:space-between;"><div style="font-weight:600;">Subtotal</div><div id="cartSubtotal" style="font-weight:600;">€0.00</div></div>
+        <div style="margin-top:.75rem; display:flex; gap:.5rem;"><a href="checkout.html" class="button primary-button" style="flex:1; display:inline-flex; align-items:center; justify-content:center;">Checkout</a><a href="cart.html" class="button secondary-button" style="flex:1; display:inline-flex; align-items:center; justify-content:center;">View Cart</a></div>
+      </div>
+    </aside>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/what-input/dist/what-input.js"></script>
+    <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
+    <script>$(document).foundation();</script>
+    <script src="js/jquery.parallax.min.js"></script>
+    <script src="../node_modules/slick-carousel/slick/slick.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/app.js"></script>
+
+    <script src="js/cart.js" defer></script>
+
+    <script>
+      (function () {
+        function escapeHtml (s) { return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+        function buildCartItemHtml (id, title, price, image, meta, qty) {
+          var t = escapeHtml(title), m = meta ? escapeHtml(meta) : '', img = image ? '<img src="'+escapeHtml(image)+'" alt="'+t+'"/>' : '';
+          qty = qty || 1;
+          return '<div class="cart-item" data-item-id="'+escapeHtml(id)+'" data-price="'+escapeHtml(price)+'">'+ img +
+                 '<div class="item-info"><div class="item-title">'+t+'</div>' + (m?'<div class="item-meta">'+m+'</div>':'') +
+                 '<div class="item-actions"><input class="qty-input" type="number" min="1" value="'+qty+'" aria-label="Quantity for '+t+'"/>' +
+                 '<button class="btn-small remove-item" aria-label="Remove '+t+'">Remove</button>' +
+                 '<div class="item-price" aria-hidden="true" style="margin-left:auto;">€'+Number(price).toFixed(2)+'</div></div></div></div>';
+        }
+
+        document.getElementById('addToCartBtn2').addEventListener('click', function () {
+          var title = 'Hair Lightener — Salon Professional';
+          var id = 'sku-lightener';
+          var price = '18.00';
+          var meta = document.getElementById('activatorSelect2').value;
+          var qty = parseInt(document.getElementById('qty2').value,10) || 1;
+          var html = buildCartItemHtml(id, title + ' — ' + meta, price, 'img/product-thumb-2-8.png', meta, qty);
+          if (window.__NUA_Cart && typeof window.__NUA_Cart.addItem === 'function') {
+            window.__NUA_Cart.addItem(html);
+            window.__NUA_Cart.update && window.__NUA_Cart.update();
+            window.__NUA_Cart.open && window.__NUA_Cart.open();
+          } else alert('Cart not initialised.');
+        });
+      })();
+    </script>
+  </body>
+</html>

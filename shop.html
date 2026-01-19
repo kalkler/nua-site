@@ -1,0 +1,226 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUA — Shop</title>
+    <link rel="icon" href="img/favicon-8.png">
+    <link rel="stylesheet" href="https://use.typekit.net/lgy1nxo.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/cart.css">
+  </head>
+
+  <body class="page">
+    <div id="loader"></div>
+
+    <header class="site-header header wow fadeInDown" data-wow-delay="1s">
+      <div class="header-inner">
+        <div class="grid-container full">
+          <div class="grid-x grid-margin-x grid-margin-y align-middle align-justify">
+              <div class="cell small-3">
+                <button class="hamburger hamburger--collapse" type="button" data-toggle="offCanvas" aria-label="Toggle menu" aria-expanded="false" aria-controls="offCanvas">
+                  <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+                </button>
+              </div>
+
+              <div class="cell small-3 medium-6 large-4 text-center">
+                <a href="index.html" class="custom-logo-link"><img class="custom-logo title-logo" src="img/logo-plain.svg" alt="NUA Colour logo"/></a>
+              </div>
+
+              <div class="cell small-3 text-right">
+                <span class="header-buttons">
+                  <button class="header-button account-login" aria-label="Open account login"><img src="img/login-white.svg" alt="Login icon"/></button>
+                  <button id="cartButton" class="header-button cart" aria-controls="cartPanel" aria-expanded="false" aria-label="Open shopping cart"><img src="img/cart-white.svg" alt="Cart icon"/><span id="cartCount" class="cart-badge" aria-hidden="true">0</span></button>
+                </span>
+              </div>
+            </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas position-left x-large-padding-top" id="offCanvas" data-off-canvas>
+        <nav class="offcanvas-menu white-text x-large-margin-top" aria-label="Primary navigation">
+          <ul>
+            <li><a href="index.html" aria-label="Home">Home</a></li>
+            <li><a href="about.html" aria-label="About Us">About Us</a></li>
+            <li class="is-active"><a href="shop.html" aria-label="Shop">Shop</a></li>
+            <li><a href="contact.html" aria-label="Contact">Contact</a></li>
+            <li><a href="policies.html" aria-label="Policies">Policies</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="off-canvas-content" data-off-canvas-content>
+        <!-- Page header / hero -->
+        <section class="header-page white-background"  id="main-content">
+          <div class="grid-container x-large-padding-top no-padding-bottom">
+            <div class="grid-x align-middle">
+              <div class="cell small-12 medium-8">
+                <h1 class="page-heading no-margin">Shop <span class="header-italic">Professional Products</span></h1>
+                <p class="leading-text">Browse our salon-grade hair colour, lightener and activators. Use the product pages for full details.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Filters / toolbar (static demo) -->
+        <section class="content-section white-background">
+          <div class="grid-container no-padding-top small-padding-bottom">
+            <div class="grid-x align-middle">
+              <div class="cell small-12 medium-8">
+                <div class="small-text">Showing 3 products</div>
+              </div>
+              <div class="cell small-12 medium-4">
+                <label class="small-text" for="sortSelect">Sort</label>
+                <select id="sortSelect" style="min-width:160px;">
+                  <option value="default">Recommended</option>
+                  <option value="price-asc">Price: low to high</option>
+                  <option value="price-desc">Price: high to low</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Product grid -->
+        <section class="content-section white-background">
+          <div class="grid-container small-padding-top medium-padding-bottom">
+            <div class="grid-x grid-margin-x grid-margin-y grid-padding-y">
+
+              <!-- Product card: Professional Permanent Hair Cream -->
+              <div class="cell small-12 medium-4">
+                <article class="product-card rounded-corners">
+                  <a href="product-1.html" class="product-link" aria-label="Professional Permanent Hair Cream">
+                    <img src="img/product-thumb-1-8.png" alt="Professional Permanent Hair Cream">
+                  </a>
+                  <div class="product-card-body">
+                    <h3>Professional Permanent Hair Cream</h3>
+                    <p class="product-excerpt">Permanent professional hair colour enriched with seaweed &amp; argan oil. Available in many colours.</p>
+
+                    <!-- Buttons: View product + Read more (no right alignment) -->
+                    <div class="product-card-actions small-margin-top">
+                      <a href="product-1.html" class="button secondary-button">View product</a>
+                    
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Product card: Hair Lightener — Salon Professional -->
+              <div class="cell small-12 medium-4">
+                <article class="product-card rounded-corners">
+                  <a href="product-2.html" class="product-link" aria-label="Hair Lightener — Salon Professional">
+                    <img src="img/product-thumb-2-8.png" alt="Hair Lightener — Salon Professional">
+                  </a>
+                  <div class="product-card-body">
+                    <h3>Hair Lightener — Salon Professional</h3>
+                    <p class="product-excerpt">Natural seaweed lightener for balayage, highlights and more.</p>
+
+                    <!-- Buttons: View product + Read more -->
+                    <div class="product-card-actions small-margin-top">
+                      <a href="product-2.html" class="button secondary-button">View product</a>
+                     
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Product card: Aloe Vera Activator -->
+              <div class="cell small-12 medium-4">
+                <article class="product-card rounded-corners">
+                  <a href="product-3.html" class="product-link" aria-label="Aloe Vera Activator">
+                    <img src="img/product-thumb-3-8.png" alt="Aloe Vera Activator">
+                  </a>
+                  <div class="product-card-body">
+                    <h3>Aloe Vera Activator</h3>
+                    <p class="product-excerpt">Developer in multiple volumes — select strength on the product page.</p>
+
+                    <!-- Buttons: View product + Read more -->
+                    <div class="product-card-actions small-margin-top">
+                      <a href="product-3.html" class="button secondary-button">View product</a>
+                   
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Footer (same structure as your template) -->
+        <footer class="dark-green-background bg-element">
+          <div class="grid-container large-padding-top large-padding-bottom">
+            <div class="grid-x grid-margin-y grid-padding-y grid-padding-x grid-margin-x align-justify">
+              <div class="cell medium-3 large-2 small-4">
+                 <img src="img/white-logo.svg" class="title-logo" alt="NUA white logo"/>
+              </div>
+              <div class="cell medium-4 medium-text-center">
+                <div class="socials white-text">
+                  <a href="https://www.tiktok.com/" aria-label="TikTok" target="_blank" rel="noopener"><i class="fa-brands fa-tiktok"></i></a>
+                  <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+              </div>
+              <div class="cell medium-shrink white-text">
+                <h4>Policies</h4>
+                <nav class="footer-nav">
+                  <ul>
+                    <li><a href="policies.html#cancellation">Cancellation Policy</a></li>
+                    <li><a href="policies.html#shipping">Shipping Policy</a></li>
+                    <li><a href="policies.html#returns">Returns Policy</a></li>
+                    <li><a href="policies.html#privacy">Privacy Policy</a></li>
+                    <li><a href="policies.html#terms">Terms of Service</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+      </div> <!-- .off-canvas-content -->
+    </div> <!-- .off-canvas-wrapper -->
+
+    <!-- Cart backdrop + panel (static demo snippet, same as other pages) -->
+    <div id="cartBackdrop" class="cart-backdrop" tabindex="-1" data-cart-backdrop></div>
+    <aside id="cartPanel" class="cart-panel" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="cartPanelTitle">
+      <div class="panel-header">
+        <div class="panel-title" id="cartPanelTitle">Your Basket</div>
+        <div><button id="cartCloseBtn" class="btn-small" aria-label="Close cart">&times;</button></div>
+      </div>
+
+      <div class="panel-body" id="cartItems">
+        <div id="cartEmpty" class="cart-empty">Your basket is empty.</div>
+      </div>
+
+      <div class="panel-footer">
+        <div class="cart-footer-summary">
+          <div>Subtotal</div>
+          <div id="cartSubtotal" class="cart-subtotal-value">€0.00</div>
+        </div>
+        <div class="cart-footer-note">Shipping calculated at checkout</div>
+        <div class="cart-footer-actions">
+          <a href="checkout.html" class="button primary-button">Checkout</a>
+          <a href="cart.html" class="button secondary-button">View Cart</a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Scripts -->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/what-input/dist/what-input.js"></script>
+    <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
+    <script src="js/jquery.parallax.min.js"></script>
+    <script src="../node_modules/slick-carousel/slick/slick.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/app.js"></script>
+
+    <script>$(document).foundation();</script>
+
+    <!-- Note: add-to-cart handler removed on this page because buttons are Read more / View product -->
+  </body>
+</html>
