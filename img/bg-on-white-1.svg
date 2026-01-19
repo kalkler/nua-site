@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 1200">
+  <defs>
+    <clipPath id="clippath">
+      <polygon points="-129.79 649.18 348.45 1200 1211.69 1200 1211.69 -516.52 -129.79 649.18" style="fill: none;"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect x="422.65" y="-407.95" width="2276.59" height="2533.5" transform="translate(-180.54 1234.73) rotate(-41)" style="fill: none;"/>
+    </clipPath>
+    <clipPath id="clippath-2">
+      <polygon points="1260 -18.81 1260 1187.51 1289.28 1200 1461.05 1200 1875.85 222.99 1978.43 -18.81 1260 -18.81" style="fill: none;"/>
+    </clipPath>
+    <clipPath id="clippath-3">
+      <rect x="432.34" y="-252.7" width="1395.91" height="1254.02" transform="translate(344.1 1268.5) rotate(-67)" style="fill: none;"/>
+    </clipPath>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1-2">
+    <g style="clip-path: url(#clippath);">
+      <g style="clip-path: url(#clippath-1);">
+        <image width="1106" height="1231" transform="translate(-129.79 649.18) rotate(-41) scale(2.13)" xlink:href="bg-element-on-white-3-right-1.png" style="isolation: isolate;"/>
+      </g>
+    </g>
+  </g>
+  <g id="Layer_1-2-2" data-name="Layer 1-2">
+    <g style="clip-path: url(#clippath-2);">
+      <g style="clip-path: url(#clippath-3);">
+        <image width="1106" height="1231" transform="translate(825.95 -513.04) rotate(23) scale(1.23)" xlink:href="bg-element-on-white-2-1.png" style="isolation: isolate;"/>
+      </g>
+    </g>
+  </g>
+</svg>

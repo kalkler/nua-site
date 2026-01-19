@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 1200">
+  <defs>
+    <clipPath id="clippath">
+      <polygon points="-2649.79 649.18 -2171.55 1200 -1308.31 1200 -1308.31 -516.52 -2649.79 649.18" style="fill: none;"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect x="-2097.35" y="-407.95" width="2276.59" height="2533.5" transform="translate(-798.67 -418.54) rotate(-41)" style="fill: none;"/>
+    </clipPath>
+    <clipPath id="clippath-2">
+      <polygon points="0 1200 864.17 1200 1053.6 379.13 0 136.18 0 1200" style="fill: none;"/>
+    </clipPath>
+    <clipPath id="clippath-3">
+      <rect x="-613.78" y="189.2" width="1516.06" height="1516.06" transform="translate(-811.16 874.7) rotate(-77)" style="fill: none;"/>
+    </clipPath>
+    <clipPath id="clippath-4">
+      <polygon points="1260 1200 1786.16 1200 1965.49 -76.8 1260 -175.68 1260 1200" style="fill: none;"/>
+    </clipPath>
+    <clipPath id="clippath-5">
+      <rect x="466" y="-102.54" width="1477.07" height="1329.52" transform="translate(480.14 1676.79) rotate(-82)" style="fill: none;"/>
+    </clipPath>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1-2">
+    <g style="clip-path: url(#clippath);">
+      <g style="clip-path: url(#clippath-1);">
+        <image width="1106" height="1231" transform="translate(-2649.79 649.18) rotate(-41) scale(2.13)" xlink:href="bg-element-on-white-3-right-1.png" style="isolation: isolate;"/>
+      </g>
+    </g>
+  </g>
+  <g id="Layer_1-2-2" data-name="Layer 1-2">
+    <g style="clip-path: url(#clippath-2);">
+      <g style="clip-path: url(#clippath-3);">
+        <image width="455" height="455" transform="translate(-423.97 38.15) rotate(13) scale(3.61)" xlink:href="bg-element-on-white-1-1.png" style="isolation: isolate;"/>
+      </g>
+    </g>
+  </g>
+  <g id="Layer_1-2-3" data-name="Layer 1-2">
+    <g style="clip-path: url(#clippath-4);">
+      <g style="clip-path: url(#clippath-5);">
+        <image width="952" height="1057" transform="translate(648.84 -261.69) rotate(8) scale(1.51)" xlink:href="bg-element-on-green-2-1.png" style="isolation: isolate;"/>
+      </g>
+    </g>
+  </g>
+</svg>
